@@ -111,6 +111,7 @@ article {
 div#logo {
     margin: 20px auto 5% auto;
 }
+
 div#sidelogo {
     display: block;
     width: 100px;
@@ -126,7 +127,6 @@ div#submitformarea {
     margin: 40px auto 50px auto;
 }
 
-
 input:not([type=submit]):not([type=file]) {
     border: 5px solid rgba(20, 99, 206, .3); 
     -webkit-box-shadow: 
@@ -138,6 +138,38 @@ input:not([type=submit]):not([type=file]) {
     box-shadow: 
       inset 0 0 8px  rgba(20,88,206,0.2),
             0 0 16px rgba(20,88,206,0.2); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+
+input.error {
+    border: 5px solid rgba(246, 20, 29, .3); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(246,20,29,0.2),
+            0 0 16px rgba(246,20,29,0.2); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(246,20,29,0.2),
+            0 0 16px rgba(246,20,29,0.2); 
+    box-shadow: 
+      inset 0 0 8px  rgba(246,20,29,0.2),
+            0 0 16px rgba(246,20,29,0.2); 
+    padding: 15px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+}
+
+input.success {
+    border: 5px solid rgba(20, 246, 20, .3); 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(20,246,20,0.2),
+            0 0 16px rgba(20,246,20,0.2); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(20,246,20,0.2),
+            0 0 16px rgba(20,246,20,0.2); 
+    box-shadow: 
+      inset 0 0 8px  rgba(20,246,20,0.2),
+            0 0 16px rgba(20,246,20,0.2); 
     padding: 15px;
     background: rgba(255,255,255,0.5);
     margin: 0 0 10px 0;
@@ -163,11 +195,6 @@ span.note {
 }
 
 
-
-footer {
-    /*background-color: rgba(20, 99, 206, 0.15);*/
-}
-
 footer a, .button {
     font-size: 1.3em;
     padding: 12px 15px 15px 15px;
@@ -179,8 +206,9 @@ footer a, .button {
     -icab-border-radius: 8px;
     -khtml-border-radius: 8px;
 }
+
 footer a:hover, .button:hover {
-background-color: rgba(20, 99, 206, 0.1);
+    background-color: rgba(20, 99, 206, 0.1);
 }
 
 .small {
@@ -192,13 +220,6 @@ footer span {
     display: inline-block;
     margin: 50px auto 5% auto;
 }
-
-
-
-
-
-
-
 
 
 
