@@ -25,6 +25,11 @@ $(document).ready(function() {
             },
         },
         //set messages to appear inline
+        messages: {
+            title: "",
+            url: "",
+            kickcode: ""
+        },
         highlight: function(label) {
             $(label).css('border-color', 'red');
         },
