@@ -12,29 +12,33 @@ $(document).ready(function() {
     $("#submit_kick_form").validate({
         //set the rules for the field names
         rules: {
-            title: {
+            kick_title: {
                 required: false
             },
-            url: {
+            kick_url: {
                 required: true,
                 url: true
             },
-            kickcode: {
+            kick_code: {
                 required: true,
                 minlength: 6
             },
         },
         //set messages to appear inline
         messages: {
-            title: "",
-            url: "",
-            kickcode: ""
+            kick_title: "",
+            kick_url: "",
+            kick_code: ""
         },
         highlight: function(label) {
-            $(label).css('border-color', 'red');
+            $(label).addClass('input.error');
+        },
+        success: function(label) {
+            $(label).addClass('input.success');
         },
         submitHandler: function(form) {
-            callBack.contactForm();
+            console.log('form submittion passed validation');
+            return false;
         }
     });
     
