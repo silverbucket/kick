@@ -25,7 +25,7 @@ $(document).ready(function() {
             },
         },
         //set messages to appear inline
-        highlight: {
+        highlight: function(label) {
             $(label).css('border-color', 'red');
         },
         submitHandler: function(form) {
