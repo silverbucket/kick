@@ -27,7 +27,7 @@ $(document).ready(function() {
         messages: {
             title: "X",
             url: "X",
-            kickcode: "X"
+            kickcode: $("#kickcode").css('border-color', 'red')
         },
         submitHandler: function(form) {
             callBack.contactForm();

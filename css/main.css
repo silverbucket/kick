@@ -111,6 +111,7 @@ article {
 div#logo {
     margin: 20px auto 5% auto;
 }
+
 div#sidelogo {
     display: block;
     width: 100px;
@@ -125,7 +126,6 @@ div#submitformarea {
     display: inline-block;
     margin: 40px auto 50px auto;
 }
-
 
 input:not([type=submit]):not([type=file]) {
     border: 5px solid rgba(20, 99, 206, .3); 
@@ -163,11 +163,6 @@ span.note {
 }
 
 
-
-footer {
-    /*background-color: rgba(20, 99, 206, 0.15);*/
-}
-
 footer a, .button {
     font-size: 1.3em;
     padding: 12px 15px 15px 15px;
@@ -179,21 +174,15 @@ footer a, .button {
     -icab-border-radius: 8px;
     -khtml-border-radius: 8px;
 }
+
 footer a:hover, .button:hover {
-background-color: rgba(20, 99, 206, 0.1);
+    background-color: rgba(20, 99, 206, 0.1);
 }
 
 footer span {
     display: inline-block;
     margin: 50px auto 5% auto;
 }
-
-
-
-
-
-
-
 
 
 
