@@ -10,9 +10,26 @@ $(document).ready(function() {
     });
 
     $("#submit_kick_form").validate({
+        //set the rules for the field names
+        rules: {
+            title: {
+                required: false
+            },
+            url: {
+                required: true,
+                url: true
+            },
+            kickcode: {
+                required: true,
+                minlength: 6
+            },
+        },
+        //set messages to appear inline
+        highlight: {
+            $(label).css('border-color', 'red');
+        },
         submitHandler: function(form) {
-            console.log('submition validation passed');
-            return false;
+            callBack.contactForm();
         }
     });
     
