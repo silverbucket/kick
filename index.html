@@ -21,29 +21,64 @@
 
         <article>
             
-            <div id="logo">
-                <img src="img/logo_300x300.png" alt="kick logo" />
-            </div>
 
-            <div id="inputarea">
-                <div id="kickcode" class="label_container"><label for="kickcode">kick code:</label></div>
-                <input name="kickcode" value="" size="25"/>
-                <div class="counter_label_container"><a href="#" id="go" class="button">go</a></div><p></p>
-            </div>
-            
+            <section id="home">
+                <div id="logo">
+                    <img src="img/logo_300x300.png" alt="kick logo" />
+                </div>
+
+                <div id="inputarea">
+                    <form name="view_kick_form" id="view_kick_form">
+                        <div class="label_container"><label for="kick_code">kick code:</label></div>
+                        <input name="kick_code" class="required" value="" size="25"/>
+                        <div class="counter_label_container"><input type="submit" class="button" name="submit" value="go" /></div><p></p>
+                    </form>
+                </div>
+            </section>
+
+
+            <section id="submit">
+                <div id="smalllogo">
+                    <a id="link-home" href="#home">
+                        <img src="img/logo_100x100.png" alt="kick logo" />
+                    </a>
+                </div>
+
+                <div id="submitformarea">
+                    <form name="submit_kick_form" id="submit_kick_form">
+                        <div class="label_container"><label for="kick_title">title</label></div>
+                        <input type="text" name="kick_title" value="" size="25"/>
+                        <div class="counter_label_container"><span class="note">optional</span></div><p></p>
+
+                        <div class="label_container"><label for="kick_url">url</label></div>
+                        <input type="text" name="kick_url" class="required url" value="" size="25"/>
+                        <div class="counter_label_container"></div><p></p>
+                        
+                        <div class="label_container"><label for="kick_code">desired kick code:</label></div>
+                        <input type="text" id="kick_code" name="kick_code" class="required" value="" size="25"/>
+                        <div class="counter_label_container"><a href="#" id="generate_code" class="button">auto-generate</a></div><p></p>
+                        
+                        <input type="submit" class="button" name="submit" value="submit" />
+                    </form>
+                </div>
+            </section>
+
+
         </article>
 
         <footer>
             <span>
-                <a href="submit/" id="submit_content" class="button" >submit content</a>
+                <a href="#submit" id="link-home" class="button" >home</a>
+                <a href="#submit" id="link-submit" class="button" >submit a kick</a>
             </span>
         </footer>
         
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/home.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

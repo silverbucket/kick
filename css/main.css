@@ -106,16 +106,29 @@ article {
     margin: 0px;
     padding: 0px;
     background-color: white;
+    min-height: 505px;
 }
+
+section#home {
+    display: block;
+}
+section#submit {
+    display: none;
+}
+
 
 div#logo {
-    margin: 20px auto 5% auto;
+    margin: 15px auto 40px auto;
+    height: 300px;
+    width: 300px;
 }
 
-div#sidelogo {
+div#smalllogo {
     display: block;
     width: 100px;
-    margin: 0px auto auto auto;
+    margin: 5px auto 0px auto;
+    height: 100px;
+    width: 100px;
 }
 
 div#inputarea {
@@ -124,11 +137,11 @@ div#inputarea {
 
 div#submitformarea {
     display: inline-block;
-    margin: 40px auto 50px auto;
+    margin: 40px auto 40px auto;
 }
 
 input:not([type=submit]):not([type=file]) {
-    border: 5px solid rgba(20, 99, 206, .3); 
+    border: 2px solid rgba(20, 99, 206, .3); 
     -webkit-box-shadow: 
       inset 0 0 8px  rgba(20,88,206,0.2),
             0 0 16px rgba(20,88,206,0.2); 
@@ -138,9 +151,20 @@ input:not([type=submit]):not([type=file]) {
     box-shadow: 
       inset 0 0 8px  rgba(20,88,206,0.2),
             0 0 16px rgba(20,88,206,0.2); 
-    padding: 15px;
+    padding: 10px;
     background: rgba(255,255,255,0.5);
-    margin: 0 0 10px 0;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -o-border-radius: 4px;
+    -icab-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    margin: 0 0 8px 0;
+}
+input[type=submit] {
+    margin-top: 10px;
+    padding: 5px 10px 5px 10px;
+    color: rgba(20, 20, 255, 1);
 }
 
 form input.error {
@@ -148,7 +172,7 @@ form input.error {
 }
 
 form input.valid {
-    border: 5px solid rgba(20, 156, 20, .3) !important; 
+    border-color: rgba(20, 156, 20, .3) !important; 
 }
 
 label {
@@ -173,7 +197,7 @@ span.note {
 
 footer a, .button {
     font-size: 1.3em;
-    padding: 12px 15px 15px 15px;
+    padding: 8px 12px 12px 12px;
     background-color: rgba(20, 99, 206, 0.05);
     border-radius: 8px;
     -webkit-border-radius: 8px;
@@ -181,10 +205,17 @@ footer a, .button {
     -o-border-radius: 8px;
     -icab-border-radius: 8px;
     -khtml-border-radius: 8px;
+    text-decoration: none;
+    color: rgba(20, 20, 255, 1);
 }
 
 footer a:hover, .button:hover {
     background-color: rgba(20, 99, 206, 0.1);
+}
+
+a.selected, a.selected:hover {
+    color: rgba(20, 99, 206, .2);
+    text-decoration: none;
 }
 
 .small {
